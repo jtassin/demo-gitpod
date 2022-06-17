@@ -2,8 +2,9 @@ tasks:
   - init: npm install
   - name: Database
     command: docker-compose up -d
-prebuilds:
-  - addComment: true
+github:
+  prebuilds:
+    - addComment: true
 vscode:
   extensions:
     - vtrois.gitmoji-vscode
