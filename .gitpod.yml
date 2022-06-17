@@ -2,6 +2,8 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - init: nvm install && nvm use && npm ci && docker-compose pull
+  - name: Database
+    init: docker-compose pull
     command: docker-compose up -d
 ports:
   - port: 3000
